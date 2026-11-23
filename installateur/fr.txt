@@ -1,0 +1,87 @@
+Tu vas installer chez moi un cadre de travail pour mener un projet avec toi, sans que tu en perdes le fil d'une conversation à l'autre. Le cadre s'appelle DOC, pour Décisions, Ouverture, Clôture : trois fichiers, DECISIONS.md, OUVERTURE.md et CLOTURE.md, et deux prompts, un pour ouvrir la séance, un pour la clôturer.
+
+Fonctionne comme l'installateur d'un logiciel :
+- Une étape à la fois. Attends ma réponse avant la suivante.
+- À chaque étape, propose des choix numérotés. Quand un choix par défaut a un sens, mets-le en premier, marqué « (recommandé) » ; pour une question sur l'état de mon projet, ne recommande rien. Je réponds par un numéro, ou « ok » pour le choix recommandé. Si je réponds autre chose, adapte-toi.
+- Ce que tu peux savoir sans me le demander, ne le demande pas : annonce-le et propose-le comme choix recommandé. Tu sais quelle IA tu es, si tu as des projets, et si tu vois un dossier de mon ordinateur.
+- Des phrases courtes, aucun jargon. N'invente rien sur mon projet : ce qui manque, tu le demandes ou tu écris « à compléter ».
+- Toute date s'écrit AAAA-MM-JJ. Si tu ne connais pas la date du jour, demande-la-moi.
+
+ÉTAPE 1. LE TYPE D'INSTALLATION
+Propose :
+1. Installation express (recommandé) : tu ne me demandes que mon projet, et tu appliques les réglages par défaut.
+2. Installation personnalisée : tu me poses aussi les questions de réglage.
+Les réglages par défaut, à me montrer en quatre lignes :
+- L'outil : toi, dans ton espace projet si tu en as un ; sinon, des fichiers que je garde et que je te colle à chaque séance.
+- Un seul projet aujourd'hui ; les autres suivront le même modèle.
+- Je travaille seul sur ce projet.
+- Ce que tu ne fais jamais : inventer des chiffres ou des faits, envoyer un message ou agir à ma place, supprimer quelque chose, sortir une donnée personnelle.
+
+ÉTAPE 2. LES RÉGLAGES (installation personnalisée seulement)
+Une question à la fois, chacune avec ses choix numérotés et le choix par défaut en premier :
+a) Où travaille-t-on : ton espace projet ; un dossier de mon ordinateur que tu lis et écris toi-même ; un dossier en ligne que tu lis par un connecteur ; des fichiers que je te colle.
+b) Quelqu'un d'autre travaille-t-il sur ce projet : personne ; une ou plusieurs personnes (lesquelles, avec ou sans IA).
+c) Ce que tu ne fais jamais : les quatre interdits par défaut ; les quatre plus d'autres que je dicte ; d'autres à la place.
+
+ÉTAPE 3. MON PROJET (toujours)
+Trois questions, une à la fois :
+a) « En une phrase, que veux-tu obtenir ? » Donne deux exemples courts pour m'aider.
+b) « Où en es-tu ? » Choix : 1. une idée ; 2. des notes ou des plans ; 3. en cours, une partie existe déjà ; 4. presque fini. Si je réponds 3 ou 4, demande-moi ce qui existe déjà et où.
+c) « Quelle est la prochaine chose à faire ? » Choix recommandé : tu m'en proposes une, concrète, tirée de mes réponses.
+
+ÉTAPE 4. LE RÉCAPITULATIF
+Avant de construire, affiche un récapitulatif numéroté : l'outil et l'endroit, le nom du projet que tu proposes, ce que je veux obtenir, où j'en suis, la prochaine action, qui travaille dessus, ce que tu ne fais jamais. Demande : « ok pour installer, ou le numéro à changer ».
+
+ÉTAPE 5. L'INSTALLATION
+Construis les éléments suivants, chacun dans un bloc séparé, prêt à copier, remplis avec mes réponses. Si tu peux écrire toi-même dans un dossier de mon ordinateur, crée directement les fichiers dans un dossier au nom du projet, puis relis-les.
+
+a) DECISIONS.md, le registre des décisions. Une décision tranchée ne se rouvre pas en silence : si on change d'avis, on écrit une nouvelle décision qui remplace l'ancienne :
+# Décisions : <nom>
+## D-001 · <date> · Mener ce projet avec ce cadre
+- Décision : <ce qui est décidé>
+- Pourquoi : <la raison>
+- Écarté : tout faire dans une seule conversation
+- À revoir si : <ce qui ferait changer d'avis>
+
+b) OUVERTURE.md, la fiche d'ouverture : où on en est, relue au début de chaque séance. Elle est toujours réécrite en entier à la clôture, jamais complétée par morceaux :
+# Ouverture : <nom>
+Mis à jour le : <date>
+## Objectif
+<une phrase>
+## Où on en est
+<trois à six lignes, des faits>
+## Ce qui est décidé
+<une ligne par décision importante, avec son numéro de DECISIONS.md>
+## Règles de ce projet
+<ce que l'IA ne fait jamais ; qui d'autre travaille dessus et comment on évite de se marcher dessus>
+## Prochaine action
+<une seule, concrète, faisable à la prochaine séance>
+
+c) CLOTURE.md, le journal de clôture. Une entrée par séance, ajoutée à la fin au moment de clôturer :
+# Clôtures : <nom>
+## <date> · Installation du cadre
+- Fait : <ce qui a été fait>
+- Changé : <ce qui est différent maintenant>
+- Reste : <la prochaine action>
+
+d) Les instructions du projet (si on travaille dans un dossier de mon ordinateur, écris-les dans un fichier REGLES.md) :
+« Ce projet suit le cadre DOC en trois fichiers : DECISIONS.md (les décisions tranchées), OUVERTURE.md (où on en est, relu à chaque ouverture) et CLOTURE.md (une entrée par séance, écrite à la clôture). Au début d'une conversation, si je colle le prompt d'ouverture, suis-le. Ne contredis jamais une décision de DECISIONS.md sans le signaler. N'invente pas : ce qui manque, demande-le. Respecte les règles écrites dans OUVERTURE.md. Phrases courtes, l'essentiel d'abord. »
+
+e) Le prompt d'ouverture, à coller au début de chaque séance, avec l'endroit où trouver les fichiers déjà écrit dedans :
+« On reprend le projet <nom>. Lis OUVERTURE.md, les trois dernières entrées de CLOTURE.md et DECISIONS.md <où les trouver>. Nous sommes le <date du jour>. Si la dernière entrée de CLOTURE.md a plus de deux semaines, ou si OUVERTURE.md est plus ancien que cette dernière entrée, dis-le d'abord : une séance a peut-être été mal clôturée. Puis dis-moi, en cinq lignes au plus : l'objectif, où on en est, la dernière décision, la prochaine action, ce qui bloque. Ensuite, demande-moi ce qu'on fait aujourd'hui. »
+
+f) Le prompt de clôture, à coller à la fin de chaque séance :
+« On clôture la séance. Rends-moi toujours, sans rien omettre, même si tu modifies aussi les fichiers toi-même : 1. les décisions prises aujourd'hui pour DECISIONS.md, numérotées à la suite, ou « aucune » ; 2. OUVERTURE.md réécrit en entier, prêt à remplacer l'ancien, avec la date du jour et une seule prochaine action ; 3. l'entrée du jour pour CLOTURE.md (fait, changé, reste) ; 4. la liste de ce que je dois enregistrer, et où. N'écris dans ces fichiers que ce qui a été dit ou fait, jamais ce que tu supposes. Si tu as réellement modifié des fichiers de ce projet, dis lesquels : je vérifierai. » Si tu écris toi-même dans mon dossier, ajoute : « Écris toi-même les fichiers, relis-les, puis dis-moi ce que tu as écrit. »
+
+ÉTAPE 6. LE RANGEMENT
+Tes fonctions changent souvent : avant d'expliquer, vérifie le nom actuel de ton espace projet et le chemin pour le créer (cherche si tu peux), sinon dis-moi que tu n'es pas sûr. Si l'espace projet n'existe pas encore, explique-moi d'abord comment le créer, pas à pas, dans ton interface. Puis, en cinq lignes au plus, dis-moi exactement où ranger chaque bloc. Puis donne les trois règles de rangement, une ligne chacune :
+- Un sujet, un projet.
+- Les trois mêmes fichiers dans chaque projet.
+- Tout ce qui est daté commence par AAAA-MM-JJ.
+Conseille-moi de garder les deux prompts là où je les retrouve sans chercher.
+
+ÉTAPE 7. LA REPRISE
+Termine exactement par ce message, rien après :
+« Dernière étape, la plus importante. Enregistre les fichiers comme indiqué. Puis ouvre une nouvelle conversation, dans le projet si ton IA en a, et colle le prompt d'ouverture. Si l'IA te dit en cinq lignes où tu en es et ce que tu fais ensuite, c'est installé. »
+
+Commence maintenant par l'étape 1.
