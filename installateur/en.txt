@@ -1,0 +1,88 @@
+You are going to set up, for me, a framework for running a project with you, so that you don't lose track of it from one conversation to the next. The framework is called DOC, for Decisions, Opening, Closing: three files, DECISIONS.md, OPENING.md and CLOSING.md, and two prompts, one to open a session, one to close it.
+
+Work like a software installer:
+- One step at a time. Wait for my answer before the next one.
+- At each step, offer numbered choices. When a default choice makes sense, put it first, marked "(recommended)"; for a question about the state of my project, recommend nothing. I answer with a number, or "ok" for the recommended choice. If I answer something else, adapt.
+- What you can know without asking me, don't ask: state it and offer it as the recommended choice. You know which AI you are, whether you have projects, and whether you can see a folder on my computer.
+- Short sentences, no jargon. Make nothing up about my project: what is missing, you ask for, or you write "to be completed".
+- Every date is written YYYY-MM-DD. If you don't know today's date, ask me.
+- File names and headings are written exactly as in this text, even if your settings use another language.
+
+STEP 1. TYPE OF SETUP
+Offer:
+1. Express setup (recommended): you only ask me about my project, and you apply the default settings.
+2. Custom setup: you also ask me the settings questions.
+The default settings, to show me in four lines:
+- The tool: you, in your project space if you have one; otherwise, files that I keep and paste to you at each session.
+- One project today; the others will follow the same model.
+- I work alone on this project.
+- What you never do: make up figures or facts, send a message or act on my behalf, delete anything, share personal data.
+
+STEP 2. SETTINGS (custom setup only)
+One question at a time, each with its numbered choices and the default first:
+a) Where do we work: your project space; a folder on my computer that you read and write yourself; an online folder that you read through a connector; files that I paste to you.
+b) Does anyone else work on this project: nobody; one or more people (who, with or without AI).
+c) What you never do: the four default rules; the four plus others that I dictate; others instead.
+
+STEP 3. MY PROJECT (always)
+Three questions, one at a time:
+a) "In one sentence, what do you want to achieve?" Give two short examples to help me.
+b) "Where are you at?" Choices: 1. an idea; 2. notes or plans; 3. in progress, part of it already exists; 4. almost done. If I answer 3 or 4, ask me what already exists and where.
+c) "What is the next thing to do?" Recommended choice: you suggest one, concrete, drawn from my answers.
+
+STEP 4. SUMMARY
+Before building, show a numbered summary: the tool and the place, the project name you suggest, what I want to achieve, where I am at, the next action, who works on it, what you never do. Ask: "ok to install, or the number to change".
+
+STEP 5. SETUP
+Build the following items, each in a separate code block, ready to copy, filled in with my answers. If you can write yourself in a folder on my computer, create the files directly in a folder named after the project, then read them back.
+
+a) DECISIONS.md, the decision log. A decision that is settled is not reopened silently: if we change our mind, we write a new decision that replaces the old one:
+# Decisions: <name>
+## D-001 · <date> · Run this project with this framework
+- Decision: <what is decided>
+- Why: <the reason>
+- Ruled out: doing everything in a single conversation
+- Revisit if: <what would make us change our mind>
+
+b) OPENING.md, the opening sheet: where we are, read at the start of each session. It is always rewritten in full at closing, never completed piece by piece:
+# Opening: <name>
+Updated on: <date>
+## Goal
+<one sentence>
+## Where we are
+<three to six lines, facts>
+## What is decided
+<one line per important decision, with its number from DECISIONS.md>
+## Rules of this project
+<in the first person ("I", "me"), without my name: what the AI never does; who else works on it and how we avoid stepping on each other>
+## Next action
+<only one, concrete, doable at the next session>
+
+c) CLOSING.md, the closing log. One entry per session, added at the end when closing:
+# Closings: <name>
+## <date> · Framework setup
+- Done: <what was done>
+- Changed: <what is different now>
+- Left: <the next action>
+
+d) The project instructions (if we work in a folder on my computer, write them in a RULES.md file):
+"This project follows the DOC framework in three files: DECISIONS.md (the settled decisions), OPENING.md (where we are, read at each opening) and CLOSING.md (one entry per session, written at closing). At the start of a conversation, if I paste the opening prompt, follow it. Never contradict a decision in DECISIONS.md without flagging it. Don't make things up: what is missing, ask for. Follow the rules written in OPENING.md. Short sentences, the essentials first."
+
+e) The opening prompt, to paste at the start of each session, with the place where the files are already written into it. Leave the date as it is, "YYYY-MM-DD": I replace it at each session.
+"We are picking up the project <name>. Read OPENING.md, the last three entries of CLOSING.md and DECISIONS.md <where to find them>. Today is YYYY-MM-DD (if this date is not filled in, ask me for it first). If the last entry of CLOSING.md is more than two weeks old, or if OPENING.md is older than that last entry, say so first: a session may not have been closed properly. Then tell me, in five lines at most: the goal, where we are, the last decision, the next action, what is blocking. Then ask me what we are doing today."
+
+f) The closing prompt, to paste at the end of each session:
+"We are closing the session. Always give me back, each file in a code block, leaving nothing out, even if you also edit the files yourself: 1. the decisions made today for DECISIONS.md, numbered in sequence, or "none"; 2. OPENING.md rewritten in full, ready to replace the old one, with today's date and a single next action; 3. today's entry for CLOSING.md (done, changed, left); 4. the list of what I must save, and where. Write in these files only what was said or done, never what you assume. If you actually edited files of this project, say which ones: I will check." If you write in my folder yourself, add: "Write the files yourself, read them back, then tell me what you wrote."
+
+STEP 6. STORING
+Your features change often: before explaining, check the current name of your project space and the way to create it (search if you can), otherwise tell me you are not sure. If the project space does not exist yet, first explain how to create it, step by step, in your interface. Then, in five lines at most, tell me exactly where to store each block. Then give the three storing rules, one line each:
+- One topic, one project.
+- The same three files in every project.
+- Everything dated starts with YYYY-MM-DD.
+Advise me to keep the two prompts where I can find them without searching.
+
+STEP 7. THE PICK-UP
+End with exactly this message, word for word and in English, nothing after it:
+"Last step, the most important one. Save the files as shown. Then open a new conversation, in the project if your AI has projects, and paste the opening prompt. If the AI tells you in five lines where you are and what you do next, it is set up."
+
+Start now with step 1.

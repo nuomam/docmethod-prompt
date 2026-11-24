@@ -1,0 +1,88 @@
+Vas a instalarme un marco de trabajo para llevar un proyecto contigo, sin que pierdas el hilo de una conversación a otra. El marco se llama DOC, por sus iniciales en inglés (Decisions, Opening, Closing): Decisiones, Apertura, Cierre. Son tres archivos, DECISIONS.md, OPENING.md y CLOSING.md, y dos prompts, uno para abrir la sesión y otro para cerrarla.
+
+Trabaja como un instalador de software:
+- Un paso cada vez. Espera mi respuesta antes del siguiente.
+- En cada paso, ofrece opciones numeradas. Cuando una opción por defecto tenga sentido, ponla primero, marcada «(recomendado)»; para una pregunta sobre el estado de mi proyecto, no recomiendes nada. Respondo con un número, u «ok» para la opción recomendada. Si respondo otra cosa, adáptate.
+- Lo que puedes saber sin preguntarme, no me lo preguntes: dilo y ofrécelo como opción recomendada. Sabes qué IA eres, si tienes proyectos y si puedes ver una carpeta de mi ordenador.
+- Frases cortas, sin jerga. No inventes nada sobre mi proyecto: lo que falte, lo preguntas, o escribes «por completar».
+- Toda fecha se escribe AAAA-MM-DD. Si no sabes la fecha de hoy, pregúntamela.
+- Los nombres de archivo y los títulos se escriben exactamente como en este texto, aunque tus ajustes usen otro idioma.
+
+PASO 1. TIPO DE INSTALACIÓN
+Ofrece:
+1. Instalación exprés (recomendado): solo me preguntas por mi proyecto y aplicas los ajustes por defecto.
+2. Instalación personalizada: también me haces las preguntas de ajustes.
+Los ajustes por defecto, que me muestras en cuatro líneas:
+- La herramienta: tú, en tu espacio de proyectos si lo tienes; si no, archivos que yo guardo y te pego en cada sesión.
+- Un proyecto hoy; los demás seguirán el mismo modelo.
+- Trabajo solo en este proyecto.
+- Lo que nunca haces: inventar cifras o hechos, enviar un mensaje o actuar en mi nombre, borrar algo, compartir datos personales.
+
+PASO 2. AJUSTES (solo instalación personalizada)
+Una pregunta cada vez, cada una con sus opciones numeradas y la opción por defecto primero:
+a) Dónde trabajamos: tu espacio de proyectos; una carpeta de mi ordenador que lees y escribes tú; una carpeta en línea que lees mediante un conector; archivos que yo te pego.
+b) ¿Alguien más trabaja en este proyecto?: nadie; una o varias personas (quiénes, con o sin IA).
+c) Lo que nunca haces: las cuatro reglas por defecto; las cuatro más otras que yo dicto; otras en su lugar.
+
+PASO 3. MI PROYECTO (siempre)
+Tres preguntas, una cada vez:
+a) «En una frase, ¿qué quieres conseguir?» Dame dos ejemplos cortos para ayudarme.
+b) «¿En qué punto estás?» Opciones: 1. una idea; 2. notas o planes; 3. en curso, una parte ya existe; 4. casi terminado. Si respondo 3 o 4, pregúntame qué existe ya y dónde.
+c) «¿Qué es lo próximo que hay que hacer?» Opción recomendada: propones una, concreta, sacada de mis respuestas.
+
+PASO 4. RESUMEN
+Antes de construir, muestra un resumen numerado: la herramienta y el lugar, el nombre de proyecto que propones, lo que quiero conseguir, en qué punto estoy, la próxima acción, quién trabaja en él, lo que nunca haces. Pregunta: «ok para instalar, o el número que hay que cambiar».
+
+PASO 5. INSTALACIÓN
+Construye los elementos siguientes, cada uno en un bloque de código aparte, listo para copiar, rellenado con mis respuestas. Si puedes escribir tú misma en una carpeta de mi ordenador, crea los archivos directamente en una carpeta con el nombre del proyecto y vuelve a leerlos.
+
+a) DECISIONS.md, el registro de decisiones. Una decisión zanjada no se reabre en silencio: si cambiamos de opinión, escribimos una decisión nueva que sustituye a la anterior:
+# Decisiones: <nombre>
+## D-001 · <fecha> · Llevar este proyecto con este marco
+- Decisión: <lo que se decide>
+- Por qué: <la razón>
+- Descartado: hacerlo todo en una sola conversación
+- Revisar si: <lo que nos haría cambiar de opinión>
+
+b) OPENING.md, la ficha de apertura: dónde estamos, leída al principio de cada sesión. Siempre se reescribe entera al cerrar, nunca se completa a trozos:
+# Apertura: <nombre>
+Actualizado el: <fecha>
+## Objetivo
+<una frase>
+## Dónde estamos
+<de tres a seis líneas, hechos>
+## Lo que está decidido
+<una línea por decisión importante, con su número de DECISIONS.md>
+## Reglas de este proyecto
+<en primera persona («yo», «me»), sin mi nombre: lo que la IA nunca hace; quién más trabaja en él y cómo evitamos pisarnos>
+## Próxima acción
+<una sola, concreta, factible en la sesión siguiente>
+
+c) CLOSING.md, el diario de cierre. Una entrada por sesión, añadida al final al cerrar:
+# Cierres: <nombre>
+## <fecha> · Instalación del marco
+- Hecho: <lo que se hizo>
+- Cambiado: <lo que ahora es distinto>
+- Pendiente: <la próxima acción>
+
+d) Las instrucciones del proyecto (si trabajamos en una carpeta de mi ordenador, escríbelas en un archivo REGLAS.md):
+«Este proyecto sigue el marco DOC en tres archivos: DECISIONS.md (las decisiones zanjadas), OPENING.md (dónde estamos, leída en cada apertura) y CLOSING.md (una entrada por sesión, escrita al cerrar). Al principio de una conversación, si pego el prompt de apertura, síguelo. Nunca contradigas una decisión de DECISIONS.md sin señalarlo. No inventes: lo que falte, pregúntalo. Respeta las reglas escritas en OPENING.md. Frases cortas, lo esencial primero.»
+
+e) El prompt de apertura, para pegar al principio de cada sesión, con el lugar donde están los archivos ya escrito en él. Deja la fecha tal cual, «AAAA-MM-DD»: la sustituyo en cada sesión.
+«Retomamos el proyecto <nombre>. Lee OPENING.md, las tres últimas entradas de CLOSING.md y DECISIONS.md <dónde encontrarlos>. Hoy es AAAA-MM-DD (si esta fecha no está rellenada, pídemela antes de nada). Si la última entrada de CLOSING.md tiene más de dos semanas, o si OPENING.md es más antigua que esa última entrada, dilo primero: puede que una sesión no se cerrara bien. Después dime, en cinco líneas como máximo: el objetivo, dónde estamos, la última decisión, la próxima acción, lo que bloquea. Luego pregúntame qué hacemos hoy.»
+
+f) El prompt de cierre, para pegar al final de cada sesión:
+«Cerramos la sesión. Devuélveme siempre, cada archivo en un bloque de código, sin omitir nada, aunque también modifiques tú los archivos: 1. las decisiones tomadas hoy para DECISIONS.md, numeradas a continuación, o «ninguna»; 2. OPENING.md reescrito entero, listo para sustituir al anterior, con la fecha de hoy y una sola próxima acción; 3. la entrada de hoy para CLOSING.md (hecho, cambiado, pendiente); 4. la lista de lo que debo guardar, y dónde. Escribe en estos archivos solo lo que se ha dicho o hecho, nunca lo que supones. Si de verdad has modificado archivos de este proyecto, di cuáles: lo comprobaré.» Si escribes tú misma en mi carpeta, añade: «Escribe tú los archivos, vuelve a leerlos y dime qué has escrito.»
+
+PASO 6. GUARDAR
+Tus funciones cambian a menudo: antes de explicar, comprueba el nombre actual de tu espacio de proyectos y la forma de crearlo (busca si puedes); si no, dime que no estás segura. Si el espacio de proyecto aún no existe, explica primero cómo crearlo, paso a paso, en tu interfaz. Después, en cinco líneas como máximo, dime exactamente dónde guardar cada bloque. Luego da las tres reglas para guardar, una línea cada una:
+- Un tema, un proyecto.
+- Los mismos tres archivos en cada proyecto.
+- Todo lo fechado empieza por AAAA-MM-DD.
+Aconséjame guardar los dos prompts donde los encuentre sin buscar.
+
+PASO 7. RETOMAR
+Termina exactamente con este mensaje, palabra por palabra y en español, nada después:
+«Último paso, el más importante. Guarda los archivos como se ha indicado. Después abre una conversación nueva, dentro del proyecto si tu IA tiene proyectos, y pega el prompt de apertura. Si la IA te dice en cinco líneas dónde estás y qué haces a continuación, está en marcha.»
+
+Empieza ahora por el paso 1.

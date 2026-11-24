@@ -9,7 +9,10 @@ Site : [docmethod.org](https://docmethod.org/fr/)
 ## Ce que contient ce dépôt
 
 - [`installateur/fr.txt`](installateur/fr.txt) : le prompt d'installation, en français. Tu le colles dans une conversation neuve avec ton IA ; elle t'installe le cadre en posant une question à la fois.
-- La version anglaise suivra, au même chemin (`installateur/en.txt`).
+- [`installateur/en.txt`](installateur/en.txt) : the installation prompt, in English.
+- [`installateur/es.txt`](installateur/es.txt) : el prompt de instalación, en español.
+
+Version 0.5.1. En anglais et en espagnol, les fichiers gardent leurs noms anglais (`DECISIONS.md`, `OPENING.md`, `CLOSING.md`), pour que le sigle reste DOC.
 
 ## Le cadre en bref
 
